@@ -1,5 +1,5 @@
 {
-    "name": "pralhad/zipcoder-laravel",
+    "name": "pralhadstha/zipcoder-laravel",
     "description": "Laravel integration for pralhad/zipcoder-php — postal code to address lookup with service provider, facade, and publishable config",
     "type": "library",
     "license": "MIT",
@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "pralhad/zipcoder-php": "dev-main",
+        "pralhadstha/zipcoder-php": "dev-main",
         "illuminate/support": "^10.0|^11.0|^12.0",
         "illuminate/contracts": "^10.0|^11.0|^12.0"
     },
