@@ -1,6 +1,6 @@
 {
     "name": "pralhadstha/zipcoder-laravel",
-    "description": "Laravel integration for pralhad/zipcoder-php — postal code to address lookup with service provider, facade, and publishable config",
+    "description": "Laravel package to resolve postal codes and zip codes to addresses. Supports multiple geocoding providers with automatic failover, built-in caching, Facade support, and publishable config.",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": "^8.2",
-        "pralhadstha/zipcoder-php": "dev-main",
+        "pralhadstha/zipcoder-php": "^1.0",
         "illuminate/support": "^10.0|^11.0|^12.0",
         "illuminate/contracts": "^10.0|^11.0|^12.0"
     },
