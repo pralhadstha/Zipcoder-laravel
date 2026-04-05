@@ -3,14 +3,25 @@
     "description": "Laravel package to resolve postal codes and zip codes to addresses. Supports multiple geocoding providers with automatic failover, built-in caching, Facade support, and publishable config.",
     "type": "library",
     "license": "MIT",
+    "homepage": "https://github.com/pralhadstha/zipcoder-laravel",
     "keywords": [
         "laravel",
         "postal-code",
+        "zip-code",
         "zipcode",
         "address",
         "geocoding",
         "lookup",
-        "zipcoder"
+        "zipcoder",
+        "cache",
+        "chain",
+        "failover"
+    ],
+    "authors": [
+        {
+            "name": "Pralhad Kumar Shrestha",
+            "homepage": "https://github.com/pralhadstha"
+        }
     ],
     "require": {
         "php": "^8.2",
@@ -42,6 +53,11 @@
                 "Zipcoder": "Pralhad\\Zipcoder\\Laravel\\Facades\\Zipcoder"
             }
         }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "format": "vendor/bin/pint",
+        "check-style": "vendor/bin/pint --test"
     },
     "minimum-stability": "stable",
     "prefer-stable": true

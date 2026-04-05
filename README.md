@@ -1,11 +1,26 @@
 # Zipcoder Laravel
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/pralhadstha/zipcoder-laravel.svg?style=flat-square)](https://packagist.org/packages/pralhadstha/zipcoder-laravel)
+[![Total Downloads](https://img.shields.io/packagist/dt/pralhadstha/zipcoder-laravel.svg?style=flat-square)](https://packagist.org/packages/pralhadstha/zipcoder-laravel)
 [![License](https://img.shields.io/packagist/l/pralhadstha/zipcoder-laravel.svg?style=flat-square)](LICENSE)
 [![PHP Version](https://img.shields.io/packagist/php-v/pralhadstha/zipcoder-laravel.svg?style=flat-square)](composer.json)
 [![Tests](https://img.shields.io/github/actions/workflow/status/pralhadstha/zipcoder-laravel/tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/pralhadstha/zipcoder-laravel/actions)
 
 A Laravel package to resolve postal codes and zip codes to addresses. Supports multiple geocoding providers with automatic failover, built-in caching, Facade support, and publishable config.
+
+## Why Zipcoder Laravel?
+
+- **Multiple providers** — GeoNames, Zippopotamus, Zipcodestack, Zipcodebase, and JP Postal Code out of the box
+- **Automatic failover** — Chain of Responsibility pattern tries providers in order until one succeeds
+- **Built-in caching** — PSR-16 cache integration with configurable TTL and store, reducing API calls
+- **Zero config for free providers** — Zippopotamus and JP Postal Code work without API keys
+- **Custom providers** — Register your own provider via config, no package forking needed
+- **Laravel-native** — Auto-discovery, Facade, publishable config, env-driven settings
+
+## Requirements
+
+- PHP 8.2 or higher
+- Laravel 10, 11, or 12
 
 ## Installation
 
@@ -246,9 +261,17 @@ Zipcoder::getRegisteredProviders(): array
 composer test
 ```
 
+## Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
+
 ## Contributing
 
-Contributions are welcome! Please submit a pull request or open an issue.
+Contributions are welcome! Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+## Security
+
+If you discover a security vulnerability, please see our [Security Policy](.github/SECURITY.md). Do not open a public issue for security vulnerabilities.
 
 ## License
 
