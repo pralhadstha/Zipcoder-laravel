@@ -1,0 +1,48 @@
+{
+    "name": "pralhad/zipcoder-laravel",
+    "description": "Laravel integration for pralhad/zipcoder-php — postal code to address lookup with service provider, facade, and publishable config",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "postal-code",
+        "zipcode",
+        "address",
+        "geocoding",
+        "lookup",
+        "zipcoder"
+    ],
+    "require": {
+        "php": "^8.2",
+        "pralhad/zipcoder-php": "dev-main",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/contracts": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0",
+        "phpunit/phpunit": "^11.0",
+        "laravel/pint": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pralhad\\Zipcoder\\Laravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pralhad\\Zipcoder\\Laravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pralhad\\Zipcoder\\Laravel\\ZipcoderServiceProvider"
+            ],
+            "aliases": {
+                "Zipcoder": "Pralhad\\Zipcoder\\Laravel\\Facades\\Zipcoder"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
